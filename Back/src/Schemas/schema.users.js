@@ -20,6 +20,10 @@ const userDB = new Schema({
     type: String,
     trim: true,
   },
+  data: {
+    type: Array,
+    trim: true,
+  },
 });
 
 export const userdb = model("userdb", userDB);
